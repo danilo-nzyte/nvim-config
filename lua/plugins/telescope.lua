@@ -22,4 +22,19 @@ return {
 			require("telescope").load_extension("ui-select")
 		end,
 	},
+	{
+		"nvim-telescope/telescope.nvim",
+		tag = "0.1.5",
+		dependencies = {
+			'nvim-lua/plenary.nvim',
+			'jonarrien/telescope-cmdline.nvim',
+		},
+		keys = {
+			{ ':', '<cmd>Telescope cmdline<cr>', desc = 'Cmdline' }
+		},
+		config = function()
+			require("telescope").setup({})
+			require("telescope").load_extension('cmdline')
+		end,
+	}
 }
