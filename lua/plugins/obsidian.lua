@@ -15,6 +15,10 @@ return {
 		},
 		notes_subdir = "input",
 
+		daily_notes = {
+			folder = "daily",
+		},
+
 		-- Optional, customize how names/IDs for new notes are created.
 		note_id_func = function(title)
 			-- Create note IDs in a Zettelkasten format with a timestamp and a suffix.
