@@ -5,3 +5,8 @@
 	vim.cmd("set number")
 	vim.cmd("set conceallevel=2")
 	vim.g.mapleader = " "
+	vim.keymap.set("n", "<leader>td", ":ObsidianToday<CR>")
+	vim.keymap.set("n", "<leader>tm", ":ObsidianToday +1<CR>")
+	vim.keymap.set("n", "<leader>yd", ":ObsidianToday -1<CR>")
+	vim.keymap.set("n", "<leader>bl", ":ObsidianBacklinks<CR>")
+	vim.keymap.set("n", "<leader>ol", ":ObsidianLinks<CR>")
