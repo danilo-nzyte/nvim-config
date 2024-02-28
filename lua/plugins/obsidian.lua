@@ -13,7 +13,8 @@ return {
 				path = "/Users/danilodrobac/Library/Mobile Documents/iCloud~md~obsidian/Documents/Dro",
 			},
 		},
-		notes_subdir = "input",
+		notes_subdir = "0-input",
+		new_notes_location = "notes_subdir",
 
 		daily_notes = {
 			folder = "daily",
