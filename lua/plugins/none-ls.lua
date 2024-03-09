@@ -9,11 +9,13 @@ return {
 					null_ls.builtins.formatting.stylua,
 					null_ls.builtins.formatting.black,
 					null_ls.builtins.formatting.isort,
-					null_ls.builtins.diagnostics.flake8.with({
-						extra_args = { "--max-line-length", "88", "--ignore", "E501" },
-					}),
+					null_ls.builtins.formatting.golines,
+					null_ls.builtins.formatting.buf,
 					null_ls.builtins.formatting.prettier.with({
 						filetypes = { "yaml", "toml" },
+					}),
+					null_ls.builtins.diagnostics.flake8.with({
+						extra_args = { "--max-line-length", "88", "--ignore", "E501" },
 					}),
 				},
 			})
