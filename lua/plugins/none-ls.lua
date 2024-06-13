@@ -14,9 +14,9 @@ return {
 					null_ls.builtins.formatting.prettier.with({
 						filetypes = { "yaml", "toml" },
 					}),
-					null_ls.builtins.diagnostics.flake8.with({
-						extra_args = { "--max-line-length", "88", "--ignore", "E501" },
-					}),
+					--null_ls.builtins.diagnostics.flake8.with({
+					--	extra_args = { "--max-line-length", "88", "--ignore", "E501" },
+					--}),
 				},
 			})
 			vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
