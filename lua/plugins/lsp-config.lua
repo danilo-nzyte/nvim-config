@@ -29,6 +29,15 @@ return {
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 			})
+			lspconfig.templ.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.bashls.setup({
+				capabilities = capabilities
+			})
+			lspconfig.terraformls.setup({
+				capabilities = capabilities
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set({ "n" }, "<leader>ca", vim.lsp.buf.code_action, {})

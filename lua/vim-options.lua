@@ -10,3 +10,4 @@
 	vim.keymap.set("n", "<leader>yd", ":ObsidianToday -1<CR>")
 	vim.keymap.set("n", "<leader>bl", ":ObsidianBacklinks<CR>")
 	vim.keymap.set("n", "<leader>ol", ":ObsidianLinks<CR>")
+	vim.filetype.add({ extension = { templ = "templ" } })
